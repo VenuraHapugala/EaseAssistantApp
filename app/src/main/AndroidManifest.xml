@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.easeassistantapp">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Ease Assistant App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.EaseAssistantApp">
+        <activity android:name=".Tharindu_DeleteExpenses"  android:parentActivityName=".MainActivity"></activity>
+        <activity android:name=".Tharindu_AddExpenses" android:parentActivityName=".MainActivity" />
+        <activity android:name=".Tharindu_ExpensesHome" android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HouseHoldDelete"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HouseHoldUpdate"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HouseHoldCreate"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HouseHoldHome"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AcademicReminderActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AcademicNoteActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AcademicaddNote"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AcademicPage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".CreateHealthNotices"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".EditHealthNotices"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DeleteHealthNotices"
+            android:theme="@style/Theme.EaseAssistantApp.CustomTheme" />
+        <activity
+            android:name=".HealthNoticesAndImages"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".BMIhealthPage"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HealthPage"
+            android:parentActivityName=".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
