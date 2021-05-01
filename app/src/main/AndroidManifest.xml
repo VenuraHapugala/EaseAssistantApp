@@ -9,9 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.EaseAssistantApp">
-        <activity android:name=".Tharindu_DeleteExpenses"  android:parentActivityName=".MainActivity"></activity>
-        <activity android:name=".Tharindu_AddExpenses" android:parentActivityName=".MainActivity" />
-        <activity android:name=".Tharindu_ExpensesHome" android:parentActivityName=".MainActivity" />
+        <activity android:name=".EditToDoHealth"></activity>
+        <activity android:name=".AddToDoHealth" />
+
+        <activity
+            android:name=".Tharindu_DeleteExpenses"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tharindu_AddExpenses"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Tharindu_ExpensesHome"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".HouseHoldDelete"
             android:parentActivityName=".MainActivity" />
@@ -54,7 +63,8 @@
         <activity
             android:name=".HealthPage"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".MainActivityHealth" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
