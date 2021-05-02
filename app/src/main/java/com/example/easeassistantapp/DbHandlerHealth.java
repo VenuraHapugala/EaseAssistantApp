@@ -2,10 +2,14 @@ package com.example.easeassistantapp;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 import androidx.annotation.Nullable;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class DbHandlerHealth extends SQLiteOpenHelper {
 
@@ -84,6 +88,76 @@ public class DbHandlerHealth extends SQLiteOpenHelper {
         sqLiteDatabase.insert(TABLE_NAME,null,contentValues);
         // close database
         sqLiteDatabase.close();
+    }
+
+    // Count todo table records
+    public int countToDo(){
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM "+ TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query,null);
+        return cursor.getCount();
+    }
+
+    // Get all todos into a list
+    public List<ToDoHealth> getAllToDos(){
+
+        List<ToDoHealth> toDos = new ArrayList();
+        SQLiteDatabase db = getReadableDatabase();
+        String query = "SELECT * FROM "+TABLE_NAME;
+
+        Cursor cursor = db.rawQuery(query,null);
+
+        if(cursor.moveToFirst()){
+            do {
+                // Create new ToDo object
+                ToDoHealth toDoHealth = new ToDoHealth();
+                // mmgby6hh
+                toDoHealth.setId(cursor.getInt(0));
+                toDoHealth.setTitle(cursor.getString(1));
+                toDoHealth.setDescription(cursor.getString(2));
+                toDoHealth.setStarted(cursor.getLong(3));
+                toDoHealth.setFinished(cursor.getLong(4));
+
+                //toDos [obj,objs,asas,asa]
+                toDos.add(toDoHealth);
+            }while (cursor.moveToNext());
+        }
+        return toDos;
+    }
+
+
+    // Delete item
+    public void deleteToDo(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        db.delete(TABLE_NAME,"id =?",new String[]{String.valueOf(id)});
+        db.close();
+    }
+
+
+
+
+    // Get a single todoHealth
+    public ToDoHealth getSingleToDo(int id){
+        SQLiteDatabase db = getWritableDatabase();
+
+        Cursor cursor = db.query(TABLE_NAME,new String[]{ID,TITLE,DESCRIPTION,STARTED, FINISHED},
+                ID + "= ?",new String[]{String.valueOf(id)}
+                ,null,null,null);
+
+        ToDoHealth toDoHealth;
+        if(cursor != null){
+            cursor.moveToFirst();
+            toDoHealth= new ToDoHealth(
+                    cursor.getInt(0),
+                    cursor.getString(1),
+                    cursor.getString(2),
+                    cursor.getLong(3),
+                    cursor.getLong(4)
+            );
+            return toDoHealth;
+        }
+        return null;
     }
 
 }

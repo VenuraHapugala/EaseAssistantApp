@@ -37,7 +37,7 @@ public class AddToDoHealth extends AppCompatActivity {
                 ToDoHealth toDoHealth = new ToDoHealth(userTitle,userDesc,started,0);
                 dbHandlerHealth.addToDo(toDoHealth);
 
-                startActivity(new Intent(context,MainActivity.class));
+                startActivity(new Intent(context,MainActivityHealth.class));
             }
         });
 
