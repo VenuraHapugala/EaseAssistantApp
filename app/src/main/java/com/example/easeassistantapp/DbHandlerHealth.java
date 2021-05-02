@@ -160,4 +160,21 @@ public class DbHandlerHealth extends SQLiteOpenHelper {
         return null;
     }
 
+    // Update a single todo
+    public int updateSingleToDo(ToDoHealth toDoHealth){
+        SQLiteDatabase db = getWritableDatabase();
+
+        ContentValues contentValues = new ContentValues();
+
+        contentValues.put(TITLE,toDoHealth.getTitle());
+        contentValues.put(DESCRIPTION, toDoHealth.getDescription());
+        contentValues.put(STARTED,toDoHealth.getStarted());
+        contentValues.put(FINISHED,toDoHealth.getFinished());
+
+        int status = db.update(TABLE_NAME,contentValues,ID +" =?",
+                new String[]{String.valueOf(toDoHealth.getId())});
+
+        db.close();
+        return status;
+    }
 }

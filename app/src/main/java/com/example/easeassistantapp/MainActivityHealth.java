@@ -66,6 +66,8 @@ public class MainActivityHealth extends AppCompatActivity {
                 builder.setPositiveButton("Finished", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        toDoHealth.setFinished(System.currentTimeMillis());
+                        dbHandler.updateSingleToDo(toDoHealth);
                         startActivity(new Intent(context,MainActivityHealth.class));
                     }
                 });
