@@ -59,6 +59,8 @@
     <string name="buttonSave">SAVE</string>
     <string name="popdelete">Delete</string>
     <string name="cancelDelete">Cancel</string>
+    <string name="bmiweight">kg</string>
+    <string name="bmiHeight">cm</string>
 
 
 </resources>
