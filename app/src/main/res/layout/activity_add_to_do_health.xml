@@ -6,26 +6,38 @@
     android:layout_height="match_parent"
     tools:context=".AddToDoHealth">
 
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="434dp"
+        android:layout_height="238dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/h1" />
+
     <TextView
         android:id="@+id/titleh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:text="Add a New Health Notice"
-        android:textSize="30sp"
+        android:layout_marginTop="30dp"
+        android:text="Add a New Health Reminder"
+        android:textColor="#3F6AB5"
+        android:textSize="26sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView10" />
 
     <EditText
         android:id="@+id/editTextTitleh"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="60dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Title"
+        android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleh" />
