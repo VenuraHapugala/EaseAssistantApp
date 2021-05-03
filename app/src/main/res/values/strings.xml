@@ -46,6 +46,9 @@
     <string name="tot_btn">CALCULATE</string>
     <string name="update_btn">UPDATE</string>
     <string name="upd_txt">Update a list</string>
+    <string name="bmiweight">kg</string>
+    <string name="bmiHeight">cm</string>
+    <string name="lbl_6new"> Health Notices and Reminders </string>
 
 
     <!--tharindu's part -->
@@ -59,8 +62,7 @@
     <string name="buttonSave">SAVE</string>
     <string name="popdelete">Delete</string>
     <string name="cancelDelete">Cancel</string>
-    <string name="bmiweight">kg</string>
-    <string name="bmiHeight">cm</string>
+
 
 
 </resources>
