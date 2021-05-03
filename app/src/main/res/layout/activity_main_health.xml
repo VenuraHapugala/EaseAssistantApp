@@ -51,6 +51,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginBottom="24dp"
         android:text="You have x ToDos In Today"
+        android:textColor="#DCBB36F4"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/addh"
