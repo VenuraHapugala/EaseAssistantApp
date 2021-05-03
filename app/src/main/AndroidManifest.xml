@@ -63,8 +63,8 @@
         <activity
             android:name=".HealthPage"
             android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivityHealth"  android:parentActivityName=".MainActivity"/>
-        <activity android:name=".MainActivity" >
+        <activity android:name=".MainActivity"  android:parentActivityName=".MainActivity"/>
+        <activity android:name=".MainActivityHealth" >
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
