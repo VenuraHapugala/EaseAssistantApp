@@ -48,7 +48,7 @@ public class MainActivityHealth extends AppCompatActivity {
         listView.setAdapter(adapter);
         //get todo counts from the table
         int countTodo = dbHandler.countToDo();
-        count.setText("You have "+countTodo+" todos");
+        count.setText("You have "+countTodo+" Health Reminders");
 
         add.setOnClickListener(new View.OnClickListener() {
             @Override
