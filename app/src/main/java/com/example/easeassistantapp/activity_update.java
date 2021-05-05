@@ -10,8 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+<<<<<<< Updated upstream
 import com.example.easeassistontapp.R;
 
+=======
+>>>>>>> Stashed changes
 public class activity_update extends AppCompatActivity {
 
     String noteTitle = "";
@@ -25,6 +28,12 @@ public class activity_update extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update);
 
+<<<<<<< Updated upstream
+=======
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_update);
+
+>>>>>>> Stashed changes
         title = findViewById(R.id.btntitle);
         note = findViewById(R.id.btnnote);
         update = findViewById(R.id.btnupdate);
@@ -50,8 +59,13 @@ public class activity_update extends AppCompatActivity {
         }
         StringBuffer buffer = new StringBuffer();
         while (res.moveToNext()) {
+<<<<<<< Updated upstream
                noteTitleNew = res.getString(  0);
                noteText = res.getString(  1);
+=======
+            noteTitleNew = res.getString(  0);
+            noteText = res.getString(  1);
+>>>>>>> Stashed changes
         }
 
         title.setText(noteTitleNew);
@@ -68,7 +82,11 @@ public class activity_update extends AppCompatActivity {
 
                 if(checkupdatedata == true) {
                     Toast.makeText(activity_update.this, "Entry  update", Toast.LENGTH_SHORT).show();
+<<<<<<< Updated upstream
                     Intent intent = new Intent(getBaseContext(), addNote.class);
+=======
+                    Intent intent = new Intent(getBaseContext(), AcademicaddNote.class);
+>>>>>>> Stashed changes
                     startActivity(intent);
                 }
                 else
@@ -85,7 +103,11 @@ public class activity_update extends AppCompatActivity {
 
                 if(checkdeletedata == true) {
                     Toast.makeText(activity_update.this, "Entry delete", Toast.LENGTH_SHORT).show();
+<<<<<<< Updated upstream
                     Intent intent = new Intent(getBaseContext(), addNote.class);
+=======
+                    Intent intent = new Intent(getBaseContext(), AcademicaddNote.class);
+>>>>>>> Stashed changes
                     startActivity(intent);
                 }
                 else

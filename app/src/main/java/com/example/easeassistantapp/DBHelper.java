@@ -6,8 +6,11 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+<<<<<<< Updated upstream
 import androidx.annotation.Nullable;
 
+=======
+>>>>>>> Stashed changes
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,7 +29,11 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
     @Override
+<<<<<<< Updated upstream
     public void onUpgrade(SQLiteDatabase DB, int i, int i1) {
+=======
+    public void onUpgrade(SQLiteDatabase DB, int oldVersion, int newVersion) {
+>>>>>>> Stashed changes
         DB.execSQL("drop Table if exists Notedetails");
     }
 
@@ -43,9 +50,12 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+<<<<<<< Updated upstream
 
 
 
+=======
+>>>>>>> Stashed changes
     public Cursor getdata() {
         SQLiteDatabase DB = this.getWritableDatabase();
         Cursor cursor = DB.rawQuery("Select * from Notedetails", null);
@@ -89,6 +99,7 @@ public class DBHelper extends SQLiteOpenHelper {
         }
     }
 
+<<<<<<< Updated upstream
         public Boolean deletedata(String name)
         {
             SQLiteDatabase DB = this.getWritableDatabase();
@@ -110,3 +121,25 @@ public class DBHelper extends SQLiteOpenHelper {
 
 
     }
+=======
+    public Boolean deletedata(String name)
+    {
+        SQLiteDatabase DB = this.getWritableDatabase();
+
+        Cursor cursor = DB.rawQuery("Select * from Notedetails where name = ?", new String[]{name});
+        if  (cursor.getCount()>0)
+        {
+            long result = DB.delete("Notedetails",  "name = ?", new String[]{name});
+            if (result == -1) {
+                return false;
+            } else {
+                return true;
+            }
+        }else
+        {
+            return false;
+        }
+    }
+
+}
+>>>>>>> Stashed changes

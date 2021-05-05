@@ -28,7 +28,11 @@ public class ReminderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+<<<<<<< Updated upstream:app/src/main/java/com/example/easeassistantapp/ReminderActivity.java
         setContentView(R.layout.activity_reminder);
+=======
+        setContentView(R.layout.activity_academic_reminder);
+>>>>>>> Stashed changes:app/src/main/java/com/example/easeassistantapp/AcademicReminderActivity.java
 
         date = findViewById(R.id.Date);
         remaningView = findViewById(R.id.textView2);

@@ -1,20 +1,31 @@
 package com.example.easeassistantapp;
 
+<<<<<<< Updated upstream
 
 import android.content.Context;
 import android.content.Intent;
 import android.provider.ContactsContract;
+=======
+import android.content.Context;
+import android.content.Intent;
+>>>>>>> Stashed changes
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+<<<<<<< Updated upstream
 import android.widget.Toast;
+=======
+>>>>>>> Stashed changes
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+<<<<<<< Updated upstream
 import com.example.easeassistontapp.R;
 
+=======
+>>>>>>> Stashed changes
 import java.util.List;
 
 public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
@@ -46,7 +57,10 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
     @NonNull
     @Override
     public NoteAdapter.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
         LayoutInflater inflater = LayoutInflater.from(context);
         View view = inflater.inflate(R.layout.single_item, parent, false);
 
@@ -69,7 +83,10 @@ public class NoteAdapter extends RecyclerView.Adapter<NoteAdapter.ViewHolder> {
         return contactsList.size();
     }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     private class MyOnClickListner implements View.OnClickListener {
         @Override
         public void onClick(View v) {
