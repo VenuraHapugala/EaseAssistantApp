@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class AddToDoHealth extends AppCompatActivity {
 
@@ -34,10 +35,15 @@ public class AddToDoHealth extends AppCompatActivity {
                 String userDesc = desc.getText().toString();
                 long started = System.currentTimeMillis();
 
-                ToDoHealth toDoHealth = new ToDoHealth(userTitle,userDesc,started,0);
-                dbHandlerHealth.addToDo(toDoHealth);
+                if (userTitle.length() <= 0 || userDesc.length() <= 0) {
+                    Toast.makeText(AddToDoHealth.this, "Enter All Data", Toast.LENGTH_SHORT).show();
 
-                startActivity(new Intent(context,MainActivityHealth.class));
+                } else {
+                    ToDoHealth toDoHealth = new ToDoHealth(userTitle, userDesc, started, 0);
+                    dbHandlerHealth.addToDo(toDoHealth);
+                    Toast.makeText(AddToDoHealth.this, "Health Reminder added successfully", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(context, MainActivityHealth.class));
+                }
             }
         });
 
