@@ -1,4 +1,4 @@
-package com.example.easeassistontapp;
+package com.example.easeassistantapp;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -11,6 +11,8 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import com.example.easeassistontapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

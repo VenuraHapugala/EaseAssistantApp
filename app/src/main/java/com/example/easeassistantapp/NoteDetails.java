@@ -1,4 +1,4 @@
-package com.example.easeassistontapp;
+package com.example.easeassistantapp;
 
 public class NoteDetails {
 

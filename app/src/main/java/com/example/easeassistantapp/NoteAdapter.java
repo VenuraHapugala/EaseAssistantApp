@@ -1,4 +1,4 @@
-package com.example.easeassistontapp;
+package com.example.easeassistantapp;
 
 
 import android.content.Context;
@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.easeassistontapp.R;
 
 import java.util.List;
 

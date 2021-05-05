@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#00BCD4"
     android:padding="10dp"
-    tools:context=".NoteActivity">
+    tools:context="com.example.easeassistantapp.NoteActivity">
 
     <ImageView
         android:id="@+id/imageView2"

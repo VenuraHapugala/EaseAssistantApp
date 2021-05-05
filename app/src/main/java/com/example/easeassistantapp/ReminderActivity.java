@@ -1,4 +1,4 @@
-package com.example.easeassistontapp;
+package com.example.easeassistantapp;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -7,6 +7,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.example.easeassistontapp.R;
 
 import java.text.DateFormat;
 import java.text.ParseException;

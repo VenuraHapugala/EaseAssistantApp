@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#00BCD4"
-    tools:context=".addNote">
+    tools:context="com.example.easeassistantapp.addNote">
 
 
     <androidx.recyclerview.widget.RecyclerView
