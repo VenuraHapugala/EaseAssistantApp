@@ -35,7 +35,9 @@ public class BMIhealthPage extends AppCompatActivity {
         float weightValue=Float.parseFloat(S1);
         float heightValue=Float.parseFloat(S2)/100;
 
-        float bmi=weightValue / (heightValue * heightValue);
+        float mult= multiply(heightValue,heightValue);
+        float div=divide(weightValue,mult);
+        float bmi=div;
 
         if(bmi < 16){
             BMIresult="Severly under weight";
@@ -57,5 +59,13 @@ public class BMIhealthPage extends AppCompatActivity {
       calculation="Result:\n" + bmi + "\n" +BMIresult;
         resulttext.setText(calculation);
 
+    }
+
+    protected float multiply(float x,float y){
+        return  x * y;
+    }
+
+    protected float divide(float a,float z){
+        return a / z;
     }
 }
