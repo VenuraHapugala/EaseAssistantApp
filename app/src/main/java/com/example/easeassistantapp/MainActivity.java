@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void g02ExpensesPage(View view){
-        Intent intent=new Intent(this,Tharindu_ExpensesHome.class);
+        Intent intent=new Intent(this,ExpHome.class);
         startActivity(intent);
     }
 }

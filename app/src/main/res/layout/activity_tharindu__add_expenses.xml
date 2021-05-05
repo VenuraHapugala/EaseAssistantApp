@@ -7,7 +7,7 @@
     tools:context=".Tharindu_AddExpenses">
 
     <EditText
-        android:id="@+id/expDetails"
+        android:id="@+id/editexpDetails"
         android:layout_width="311dp"
         android:layout_height="73dp"
         android:layout_marginStart="40dp"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.308" />
 
     <EditText
-        android:id="@+id/expAmount"
+        android:id="@+id/editexpAmount"
         android:layout_width="311dp"
         android:layout_height="73dp"
         android:layout_marginStart="40dp"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.548" />
 
     <DatePicker
-        android:id="@+id/expDate"
+        android:id="@+id/editexpDate"
         android:layout_width="333dp"
         android:layout_height="174dp"
         android:clickable="true"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/save"
+        android:id="@+id/expNew"
         android:layout_width="158dp"
         android:layout_height="60dp"
         android:text="@string/buttonSave"
@@ -100,7 +100,7 @@
         app:srcCompat="@drawable/exp_add" />
 
     <RadioGroup
-        android:id="@+id/expType"
+        android:id="@+id/editexpType"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
