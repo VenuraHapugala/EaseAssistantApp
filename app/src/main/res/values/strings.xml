@@ -59,6 +59,9 @@
     <string name="buttonSave">SAVE</string>
     <string name="popdelete">Delete</string>
     <string name="cancelDelete">Cancel</string>
+    <string name="invalid_expdetails">Please Fill This</string>
+    <string name="invalid_extype">Enter Credit / Debit</string>
+    <string name="invalid_examount">Enter an Amount</string>
 
 
 </resources>

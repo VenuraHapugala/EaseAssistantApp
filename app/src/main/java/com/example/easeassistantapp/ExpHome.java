@@ -52,6 +52,8 @@ public class ExpHome extends AppCompatActivity {
 
         listView.setAdapter(expAdapter);
 
+
+
         /*float EXPBalance = addExpenses.balanceExp();
         textView.setText("Rs "+EXPBalance);*/
 
