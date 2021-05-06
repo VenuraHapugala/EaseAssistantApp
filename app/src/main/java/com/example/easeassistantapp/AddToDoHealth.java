@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -31,18 +32,27 @@ public class AddToDoHealth extends AppCompatActivity {
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String userTitle = title.getText().toString();
-                String userDesc = desc.getText().toString();
-                long started = System.currentTimeMillis();
-
-                if (userTitle.length() <= 0 || userDesc.length() <= 0) {
-                    Toast.makeText(AddToDoHealth.this, "Enter All Data", Toast.LENGTH_SHORT).show();
-
+                if (TextUtils.isEmpty(title.getText())) {
+                    title.setError("Enter Title");
+                    title.requestFocus();
+                }
+                if (TextUtils.isEmpty(desc.getText())) {
+                    desc.setError("Enter Description");
+                    desc.requestFocus();
                 } else {
-                    ToDoHealth toDoHealth = new ToDoHealth(userTitle, userDesc, started, 0);
-                    dbHandlerHealth.addToDo(toDoHealth);
-                    Toast.makeText(AddToDoHealth.this, "Health Reminder added successfully", Toast.LENGTH_SHORT).show();
-                    startActivity(new Intent(context, MainActivityHealth.class));
+                    String userTitle = title.getText().toString();
+                    String userDesc = desc.getText().toString();
+                    long started = System.currentTimeMillis();
+
+                    if (userTitle.length() <= 0 || userDesc.length() <= 0) {
+                        Toast.makeText(AddToDoHealth.this, "Enter All Data", Toast.LENGTH_SHORT).show();
+
+                    } else {
+                        ToDoHealth toDoHealth = new ToDoHealth(userTitle, userDesc, started, 0);
+                        dbHandlerHealth.addToDo(toDoHealth);
+                        Toast.makeText(AddToDoHealth.this, "Health Reminder added successfully", Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(context, MainActivityHealth.class));
+                    }
                 }
             }
         });

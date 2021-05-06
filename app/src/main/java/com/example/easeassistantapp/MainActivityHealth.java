@@ -13,6 +13,7 @@ import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -80,6 +81,7 @@ public class MainActivityHealth extends AppCompatActivity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         dbHandler.deleteToDo(toDoHealth.getId());
+                        Toast.makeText(MainActivityHealth.this, "Health Reminder deleted successfully", Toast.LENGTH_SHORT).show();
                         startActivity(new Intent(context,MainActivityHealth.class));
                     }
                 });
