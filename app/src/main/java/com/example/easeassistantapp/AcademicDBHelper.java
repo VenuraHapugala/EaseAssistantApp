@@ -15,7 +15,7 @@ public class AcademicDBHelper extends SQLiteOpenHelper {
     List<AcademicNoteDetails> noteDetailsList = new ArrayList<AcademicNoteDetails>();
 
     public AcademicDBHelper(Context context) {
-        super(context, "mad", null, 1);
+        super(context, "mad1", null, 1);
     }
 
     @Override
