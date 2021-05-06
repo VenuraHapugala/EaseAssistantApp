@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class EditToDoHealth extends AppCompatActivity {
 
@@ -45,7 +46,9 @@ public class EditToDoHealth extends AppCompatActivity {
                 ToDoHealth toDoHealth = new ToDoHealth(Integer.parseInt(id),titleText,decText,updateDate,0);
                 int state = dbHandler.updateSingleToDo(toDoHealth);
                 System.out.println(state);
+                Toast.makeText(EditToDoHealth.this, "Health Reminder updated successfully", Toast.LENGTH_SHORT).show();
                 startActivity(new Intent(context,MainActivityHealth.class));
+
             }
         });
     }

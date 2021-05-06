@@ -23,6 +23,6 @@ public class BMIUnitTest {
     @Test
     public void testDivision(){
         float result = bmIhealthPage.divide(12,2);
-        assertEquals(6.0,result,000001);
+        assertEquals(6.0,result,0.000001);
     }
 }
