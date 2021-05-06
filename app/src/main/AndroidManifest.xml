@@ -11,7 +11,7 @@
         android:theme="@style/Theme.EaseAssistantApp">
         <activity android:name=".EditToDoHealth"></activity>
         <activity android:name=".AddToDoHealth" />
-
+        <activity android:name=".Academic_activity_update"></activity>
         <activity
             android:name=".Tharindu_DeleteExpenses"
             android:parentActivityName=".MainActivity" />
