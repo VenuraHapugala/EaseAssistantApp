@@ -61,30 +61,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
-    <TextView
-        android:id="@+id/monthlyshoptxt"
-        android:layout_width="120dp"
-        android:layout_height="38dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="60dp"
-        android:text="@string/H1"
-        android:textAllCaps="false"
-        android:textSize="14sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/listingstxt" />
-
-    <TextView
-        android:id="@+id/amount1txt"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginLeft="36dp"
-        android:layout_marginTop="112dp"
-        android:text="@string/amount1"
-        app:layout_constraintStart_toEndOf="@+id/monthlyshoptxt"
-        app:layout_constraintTop_toBottomOf="@+id/huholdingHL" />
-
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/add_btn"
         android:layout_width="wrap_content"
@@ -93,49 +69,40 @@
         android:layout_marginLeft="100dp"
         android:layout_marginEnd="66dp"
         android:layout_marginRight="66dp"
-        android:layout_marginBottom="49dp"
+        android:layout_marginBottom="36dp"
         android:clickable="true"
         android:onClick="go2CreateHouseHold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@android:drawable/ic_input_add" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/delete_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="117dp"
-        android:layout_marginLeft="117dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="102dp"
-        android:layout_marginRight="102dp"
-        android:clickable="true"
-        android:onClick="go2DeleteHouseHold"
-        app:backgroundTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/monthlyshoptxt"
-        app:layout_constraintTop_toBottomOf="@+id/huholdingHL"
-        app:srcCompat="@android:drawable/ic_menu_delete" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/edit_btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="84dp"
-        android:layout_marginEnd="25dp"
-        android:layout_marginRight="25dp"
-        android:clickable="true"
-        android:onClick="go2EditHouseHold"
-        app:backgroundTint="#FFFFFF"
+
+
+
+    <ListView
+        android:id="@+id/hs_listview"
+        android:layout_width="413dp"
+        android:layout_height="300dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/countlist"
+        android:layout_width="195dp"
+        android:layout_height="39dp"
+        android:text="You have x listings"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/delete_btn"
-        app:layout_constraintTop_toBottomOf="@+id/huholdingHL"
-        app:srcCompat="@android:drawable/ic_menu_edit" />
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
