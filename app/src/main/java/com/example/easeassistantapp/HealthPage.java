@@ -24,7 +24,7 @@ public class HealthPage extends AppCompatActivity {
     }
 
     public void go2HealthNoticesAndImagesPage(View view){
-        Intent intent=new Intent(this,HealthNoticesAndImages.class);
+        Intent intent=new Intent(this,MainActivityHealth.class);
         startActivity(intent);
     }
 }
