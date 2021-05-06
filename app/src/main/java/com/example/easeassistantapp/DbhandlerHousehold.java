@@ -14,7 +14,7 @@ import java.util.List;
 public class DbhandlerHousehold extends SQLiteOpenHelper {
 
     private static final int VERSION = 1;
-    private static final String DB_NAME = "mad";
+    private static final String DB_NAME = "mad4";
     private static final String TABLE_NAME = "household";
 
     private static final String ID = "id";
