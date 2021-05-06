@@ -13,7 +13,7 @@
             android:windowSoftInputMode="adjustPan"></activity>
         <activity android:name=".AddExpenses"
             android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".ExpHome" />
+        <activity android:name=".ExpHome"  android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".Tharindu_DeleteExpenses"
             android:parentActivityName=".MainActivity" />
@@ -26,15 +26,7 @@
         <activity android:name=".EditToDoHealth"></activity>
         <activity android:name=".AddToDoHealth" />
         <activity android:name=".Academic_activity_update"></activity>
-        <activity
-            android:name=".Tharindu_DeleteExpenses"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Tharindu_AddExpenses"
-            android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Tharindu_ExpensesHome"
-            android:parentActivityName=".MainActivity" />
+
         <activity
             android:name=".HouseHoldDelete"
             android:parentActivityName=".MainActivity" />
