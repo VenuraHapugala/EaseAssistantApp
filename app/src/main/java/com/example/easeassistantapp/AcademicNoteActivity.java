@@ -37,12 +37,12 @@ public class AcademicNoteActivity extends AppCompatActivity {
 
                 Boolean checksavedata =  DB.savedata(nameTXT, noteTXT);
                 if(checksavedata == true) {
-                    Toast.makeText(AcademicNoteActivity.this, "save your note", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AcademicNoteActivity.this, "Note Saved Successfully", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(getBaseContext(), AcademicaddNote.class);
                     startActivity(intent);
                 }
                 else
-                    Toast.makeText(AcademicNoteActivity.this, "not save note", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AcademicNoteActivity.this, "Saving Note Failed, Try Again!", Toast.LENGTH_SHORT).show();
             }
         });
 
