@@ -42,7 +42,7 @@ public class AcademicNoteActivity extends AppCompatActivity {
                     startActivity(intent);
                 }
                 else
-                    Toast.makeText(AcademicNoteActivity.this, "not save note", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AcademicNoteActivity.this, "Saving Note Failed, Try Again!", Toast.LENGTH_SHORT).show();
             }
         });
 
