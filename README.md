@@ -29,14 +29,14 @@
 <b>The house holding management section</b> helps the user to manage household-related tasks in a very efficient way with proper planning. He can keep records of the needed household tasks and change them as according to his needs. With this, every function helps the user to manage his day-to-day life tasks without making any mistake. This app helps the user in several aspects of task varieties. Hence, he/she can use the app according to his/her timely needs. 
 </p>
  <hr/>
- <h1> Technology </h1>
+ <h3> Technology </h3>
  <p>Implemented codes using Android Studio IDE and the programming language was Java programming language.</p>
  
  <br>
-  <h1> Tools </h1>
+  <h3> Tools </h3>
  <p>GitHub version control system was used to integrate this project and Software Development Kit (SDK) was used in Android Studio to develop this mobile application.</p>
  
  <br>
- <h1> Database</h1>
+ <h3> Database</h3>
  <p>Developed the database using SQLite database. </p>
  <hr/>
